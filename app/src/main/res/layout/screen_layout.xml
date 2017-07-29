@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/screen"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+        <ScrollView
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="13dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/screen"
+            android:fadeScrollbars="false"
+            android:scrollbars="none">
+
+                <TextView
+                    android:text="Welcome\n"
+                    android:gravity="right"
+                    android:textSize="40sp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="3dp"
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="false"
+                    android:scrollbars="none"/>
+
+        </ScrollView>
+
+</LinearLayout>
