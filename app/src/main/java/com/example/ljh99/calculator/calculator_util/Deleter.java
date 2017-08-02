@@ -5,13 +5,20 @@ package com.example.ljh99.calculator.calculator_util;
  */
 
 public class Deleter {
+    CalculatorStatusListener listener;
     StringBuilder expression;
-    protected Deleter(StringBuilder expression){
-        this.expression=expression;
+
+    protected Deleter(CalculatorStatusListener listener) {
+        this.listener = listener;
+        expression=listener.getExpression();
     }
 
     //用来删除表达式中内容的方法
-    protected void delete() {
-        expression.delete(expression.length() - 1, expression.length());
+    protected boolean delete() {
+        if (expression.length() > 0) {
+            expression.delete(expression.length() - 1, expression.length());
+            return true;
+        }
+        return false;
     }
 }

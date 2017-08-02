@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/land_select"
+            android:onClick="onClick"
+            android:text="7"
+            android:textColor="@color/num"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/land_select"
+            android:onClick="onClick"
+            android:text="8"
+            android:textColor="@color/num"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/land_select"
+            android:onClick="onClick"
+            android:text="9"
+            android:textColor="@color/num"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/land_select_del"
+            android:onClick="onClick"
+            android:text="del"
+            android:textAllCaps="false"
+            android:textColor="@color/background"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/land_select"
+            android:onClick="onClick"
+            android:text="4"
+            android:textColor="@color/num"
+            android:textSize="25sp" />
+
+        <Button
+
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/land_select"
+            android:onClick="onClick"
+            android:text="5"
+            android:textColor="@color/num"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/land_select"
+            android:onClick="onClick"
+            android:text="6"
+            android:textColor="@color/num"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/bf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/land_select"
+            android:onClick="onClick"
+            android:text="%"
+            android:textColor="@color/num"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/land_select"
+                    android:onClick="onClick"
+                    android:text="1"
+                    android:textColor="@color/num"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/tow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/land_select"
+                    android:onClick="onClick"
+                    android:text="2"
+                    android:textColor="@color/num"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/land_select"
+                    android:onClick="onClick"
+                    android:text="3"
+                    android:textColor="@color/num"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/zero"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/land_select_0"
+                    android:onClick="onClick"
+                    android:text="0"
+                    android:textColor="@color/num"
+                    android:textSize="28sp" />
+
+                <Button
+                    android:id="@+id/poin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/land_select"
+                    android:onClick="onClick"
+                    android:text="."
+                    android:textColor="@color/num"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/land_select_equal"
+            android:onClick="onClick"
+            android:text="="
+            android:textColor="@color/background"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+</LinearLayout>
+

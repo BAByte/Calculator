@@ -7,15 +7,14 @@ package com.example.ljh99.calculator.calculator_util;
 public class AddNumer {
     StringBuilder expression;
     CalculatorStatusListener listener;
-    protected AddNumer(StringBuilder expression,CalculatorStatusListener listener){
-        this.expression=expression;
+    protected AddNumer(CalculatorStatusListener listener){
+        this.expression=listener.getExpression();
         this.listener=listener;
     }
 
     protected void add(String num){
             expression.append(num);
-            //此时表达式最后一个不是符号了
-            listener.deleteSign();
             listener.addNum();
+            listener.notResult();
     }
 }

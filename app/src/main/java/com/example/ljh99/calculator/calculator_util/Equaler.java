@@ -1,5 +1,7 @@
 package com.example.ljh99.calculator.calculator_util;
 
+import android.util.Log;
+
 import org.javia.arity.Symbols;
 import org.javia.arity.SyntaxException;
 
@@ -13,8 +15,8 @@ public class Equaler {
     StringBuilder expression;
     CalculatorStatusListener listener;
 
-    protected Equaler(StringBuilder expression,CalculatorStatusListener listener) {
-        this.expression = expression;
+    protected Equaler(CalculatorStatusListener listener) {
+        this.expression = listener.getExpression();
         this.listener=listener;
     }
 
@@ -53,8 +55,7 @@ public class Equaler {
                 expression.append(result);
                 back=result+"";
             }
-            //因为计算出结果后，表达式中只剩下一个结果，所以不是表达式
-            listener.notExpression();
+
             //最后的数字现在是计算出来的结果
             listener.isResult();
             return back;

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginTop="10dp"
+    android:id="@+id/port"
+    android:layout_marginRight="1dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginTop="25dp"
     android:background="@drawable/screen"
     android:layout_width="match_parent"
     android:layout_height="0dp"
@@ -8,7 +11,7 @@
 
         <ScrollView
             android:layout_marginRight="13dp"
-            android:layout_marginLeft="13dp"
+            android:layout_marginLeft="14dp"
             android:layout_marginTop="14dp"
             android:layout_marginBottom="13dp"
             android:layout_height="match_parent"
@@ -17,11 +20,12 @@
             android:fadeScrollbars="false"
             android:scrollbars="none">
 
+
                 <TextView
-                    android:text="Welcome\n"
+                    android:layout_gravity="right"
                     android:gravity="right"
                     android:textSize="40sp"
-                    android:paddingLeft="20dp"
+                    android:paddingLeft="10dp"
                     android:paddingRight="20dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="3dp"
